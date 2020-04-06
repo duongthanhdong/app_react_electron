@@ -1,0 +1,70 @@
+{
+  "name": "Alert_App",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "electron-is-dev": "^1.1.0",
+    "electron-push-receiver": "^2.1.3",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0"
+  },
+  "author": {
+    "name": "Duong Thanh Dong",
+    "email": "duongthanhdong55@gmail.com",
+    "url": "https://vnpt.com.vn/"
+  },
+  "build": {
+    "appId": "com.my-website.my-app",
+    "productName": "AlertApp",
+    "copyright": "Copyright © 2019 ${author}",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "output": "app_64bit"
+    }
+  },
+  "main": "public/electron.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "postinstall": "electron-builder install-app-deps",
+    "package": "electron-builder build --win -c.extraMetadata.main=build/electron.js --publish never",
+    "package_32": "electron-builder build --win --ia32 -c.extraMetadata.main=build/electron.js --publish never",
+    "electron-dev": "concurrently \"SET BROWSER=none&&npm start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "electron": "^8.1.1",
+    "electron-builder": "^22.4.1",
+    "wait-on": "^4.0.1"
+  }
+}

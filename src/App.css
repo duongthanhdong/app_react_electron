@@ -1,0 +1,140 @@
+.App {
+  height: calc(100vh);
+  position: relative;
+}
+
+.App-logo {
+  height: 57vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.login-tab{
+  background-color: #282c34;
+  margin: 0px;
+}
+
+
+
+.button{
+  box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9),
+     5px 5px 8px rgba(0, 0, 0, 0.274);
+  padding: 4px 6px;
+  margin: 8px;
+  color: black;
+  cursor: pointer;
+  font-size: 900;
+  border-radius: 8px;
+  align-self: end;
+}
+
+.App-header {
+  background-color: #181a23;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0px 30px 0px 40px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-footer {
+  position: absolute;
+  border-top: 1px solid #e8e8e8;
+  bottom: 0px;
+  width: 100%;
+  height: 7vh;
+  background-color: #cccccc;
+  line-height: 7vh;
+  border-top: 1px solid rgb(199, 199, 199);
+  text-align: center;
+}
+
+.card {
+  margin: 8px;
+  background-color: white;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.small-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding-bottom: 4px;
+  padding-left: 4px;
+  margin: 4px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(82, 82, 82);
+  text-align: center;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.App-header::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  border-radius: 10px !important;
+  background-color: rgba(255, 255, 255, 0);
+  width: 0px !important;
+}
+.App-header::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.App-header::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  /* border: 2px solid #fff; */
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+}
+.App-header:hover::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.411);
+  box-shadow: inset 0 0 6px rgba(184, 177, 177, 0);
+  background-color: rgba(177, 170, 170, 0.411);
+}
+
+.icon {
+  padding: 4px ;
+  box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9),
+     5px 5px 8px rgba(0, 0, 0, 0.24);
+  color: greenyellow;
+  border-radius: 50%;
+  margin-right: 8px;
+
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
